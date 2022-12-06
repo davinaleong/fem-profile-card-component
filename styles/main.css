@@ -21,14 +21,13 @@
 
 /** Root **/
 :root {
-  --clr-primary-900: hsl(229, 23%, 23%);
-
-  --clr-accent-400: hsl(185, 75%, 39%);
+  --clr-primary-400: hsl(185, 75%, 39%);
 
   --clr-link-400: hsl(228, 45%, 44%);
 
   --clr-neutral-400: hsl(0, 0%, 59%);
   --clr-neutral-500: hsl(227, 10%, 46%);
+  --clr-neutral-900: hsl(229, 23%, 23%);
 
   --clr-gray-50: hsl(0, 0%, 100%);
   --clr-gray-100: hsl(0, 0%, 90%);
@@ -261,6 +260,38 @@ a:where(:hover, :focus, :focus-visible) {
   right: -90vw;
 }
 
+.card {
+  --card-width: 330px;
+  --card-height: 375px;
+
+  max-width: var(--card-width);
+  height: var(--card-height);
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.2fr 1.5fr 0.5fr;
+}
+
+.card__decoration {
+  background-image: url(./../images/bg-pattern-card.svg);
+}
+
+.profile__info__inner {
+  display: flex;
+  gap: var(--size-200);
+  align-items: center;
+  justify-content: center;
+}
+
+.card__footer {
+  border-top: thin solid var(--clr-gray-100);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  text-align: center;
+}
+
 /** Content - End **/
 
 /** Utility **/
@@ -281,12 +312,12 @@ a:where(:hover, :focus, :focus-visible) {
 }
 
 /** Utility - Colours **/
-.text-primary-900 {
-  color: var(--clr-primary-900);
+.text-primary-400 {
+  color: var(--clr-primary-400);
 }
 
-.text-accent-400 {
-  color: var(--clr-accent-400);
+.text-link-400 {
+  color: var(--clr-link-400);
 }
 
 .text-neutral-400 {
@@ -294,6 +325,9 @@ a:where(:hover, :focus, :focus-visible) {
 }
 .text-neutral-500 {
   color: var(--clr-neutral-500);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
 }
 
 .text-gray-50 {
@@ -331,12 +365,12 @@ a:where(:hover, :focus, :focus-visible) {
 }
 
 /** Utility - Background Colours **/
-.bg-primary-900 {
-  background-color: var(--clr-primary-900);
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
 }
 
-.bg-accent-400 {
-  background-color: var(--clr-accent-400);
+.bg-link-400 {
+  background-color: var(--clr-link-400);
 }
 
 .bg-neutral-400 {
@@ -344,6 +378,9 @@ a:where(:hover, :focus, :focus-visible) {
 }
 .bg-neutral-500 {
   background-color: var(--clr-neutral-500);
+}
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
 }
 
 .bg-gray-50 {
