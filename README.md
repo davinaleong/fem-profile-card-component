@@ -4,7 +4,7 @@ Another simple challenge from Frontend Mentor.
 
 The challenge can be found [here](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
 
-Demo page can be found [here](https://davinaleong.github.io/fem-profile-preview-component/)!
+Demo page can be found [here](https://davinaleong.github.io/fem-profile-card-component/)!
 
 ## Getting Started
 
